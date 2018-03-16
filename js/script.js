@@ -2,16 +2,12 @@
 $(document).ready(function() {
 	
 	$('body').on('touchmove', false);
-	
-	$('#header').append(headerText);
-	
-	$('#footer').append(footerText);
 
 	shuffle(JSONBingo.squares);
 	
-	for (i=0; i<24; i++)	{
+	for (var i = 0; i < 24; i++) {
 	
-		if (i==12) {
+		if (i == 12) {
 			$('#board').append("<div data-value='1' class='selected freesquare' id='sqfree'><div class='text'><br/>free space</div></div>");
 			$('#board').append("<div data-value='0' class='square' id='sq12'><div class='text'><br/>"+JSONBingo.squares[i].square+"</div></div>");
 		} else {

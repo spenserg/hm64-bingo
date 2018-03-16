@@ -1,8 +1,3 @@
-
-var headerText = "Harvest Moon 64 Bingo";
-
-var footerText = " ";
-
 var winText = "Winner";
 
 var clickSnd = new Audio("audio/click.mp3");
